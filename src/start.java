@@ -3,6 +3,7 @@
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 
 public class start 
@@ -18,8 +19,15 @@ public class start
     	executor.execute(task2);
     	test();
     	executor.execute(task);
-    	
-    	//System.exit(0); 
+    	try
+    	{
+    		TimeUnit.SECONDS.sleep(6);
+    	}
+    	catch(InterruptedException ex)
+    	{
+    		System.out.print(ex.getMessage());
+    	}
+    	System.exit(0); 
     }
     
     

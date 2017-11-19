@@ -18,6 +18,8 @@ public class start
     	executor.execute(task2);
     	test();
     	executor.execute(task);
+    	
+    	System.exit(0);
     }
     
     

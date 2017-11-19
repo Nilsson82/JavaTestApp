@@ -19,7 +19,7 @@ public class start
     	test();
     	executor.execute(task);
     	
-    	System.exit(0); 
+    	//System.exit(0); 
     }
     
     
